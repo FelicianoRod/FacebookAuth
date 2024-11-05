@@ -36,10 +36,7 @@ class LoginViewModel: ViewModel() {
 
 
 // Profile View State
-
-
-
-
-
-
-
+@Immutable
+data class ProfileViewState(
+    val profile: Profile? = null
+)
