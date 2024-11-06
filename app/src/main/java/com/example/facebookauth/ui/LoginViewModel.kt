@@ -29,6 +29,9 @@ class LoginViewModel: ViewModel() {
     }
 
     // Update Profile
+    private fun updateProfile(profile: Profile) {
+        _profileViewState.value = _profileViewState.value?.copy(profile =profile)
+    }
 
     // Reset Profile
     private fun resetProfile() {
